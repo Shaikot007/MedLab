@@ -1,0 +1,16 @@
+.TextCont h3 {
+  float: left;
+  width: 500px;
+  color: black !important;
+  text-align: left;
+  font-size: 38px;
+}
+
+.TextCont p {
+  float: left;
+  width: 500px;
+  color: grey !important;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+}
