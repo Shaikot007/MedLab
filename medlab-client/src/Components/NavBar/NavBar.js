@@ -59,10 +59,9 @@ export default class NavBar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>
-                  Pages
+                  All Test
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
@@ -77,30 +76,23 @@ export default class NavBar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
-
               <NavItem>
-                <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>How it works</NavLink>
+                <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Departments</NavLink>
               </NavItem>
-
               <NavItem>
-                <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Treatments</NavLink>
+                <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Hospitals</NavLink>
               </NavItem>
-
               <NavItem>
                 <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Membership</NavLink>
               </NavItem>
-
               <NavItem>
                 <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Help</NavLink>
               </NavItem>
-
               <NavItem>
                 <NavLink href="#">
-                  <Input />
+                  <Input placeholder='Find your tests' />
                 </NavLink>
               </NavItem>
-
               <NavItem>
                 <NavLink href="#">
                   <Button style={{ backgroundColor: 'navy', borderRadius: '25px', width: '200px', fontWeight: 'bold' }}>
@@ -108,7 +100,6 @@ export default class NavBar extends React.Component {
                   </Button>
                 </NavLink>
               </NavItem>
-
               <NavItem>
                 <NavLink href="#">
                   <Button style={{ backgroundColor: 'darkorange', borderRadius: '25px', width: '100px', fontWeight: 'bold' }}>
@@ -116,7 +107,6 @@ export default class NavBar extends React.Component {
                   </Button>
                 </NavLink>
               </NavItem>
-
             </Nav>
           </Collapse>
         </Navbar>
