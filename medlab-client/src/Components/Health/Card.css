@@ -1,0 +1,15 @@
+.Card {
+  margin-bottom: 10%;
+}
+
+.CardLink {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: tomato;
+}
+
+.CardLink:hover {
+  cursor: auto;
+  color: tomato;
+}
