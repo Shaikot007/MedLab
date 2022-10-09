@@ -1,0 +1,11 @@
+.FeaturedCard {
+  padding: 50px;
+  height: 250px;
+  border-radius: 0px;
+  border: none;
+}
+
+.FeaturedCard:hover {
+  cursor: pointer;
+  border-top: 2px solid tomato;
+}
