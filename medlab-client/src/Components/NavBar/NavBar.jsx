@@ -1,5 +1,7 @@
 import React from 'react';
 import Brand_logo from '../../Images/Brand_logo/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import {
   Collapse,
   Navbar,
@@ -12,7 +14,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Input,
+  // Input,
   Button
 } from 'reactstrap';
 
@@ -89,7 +91,8 @@ export default class NavBar extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="#">
-                  <Input placeholder='Find your tests' />
+                <FontAwesomeIcon icon={faSearch} size="lg" style={{ paddingTop: '10px', color: 'navy' }} />
+                  {/* <Input placeholder='Find your tests' /> */}
                 </NavLink>
               </NavItem>
               <NavItem>

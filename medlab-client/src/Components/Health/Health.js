@@ -1,6 +1,6 @@
 import React from "react";
 import './Health.css';
-import HealthCard from './Card';
+import HealthCard from './HealthCard';
 
 function Health() {
   return (
@@ -8,7 +8,7 @@ function Health() {
       <div className="HealthTitle">
         <h3>Best Solution For Your Health</h3>
       </div>
-      <div className="HealthCard">
+      <div className="HealthCardBox">
         <HealthCard />
       </div>
     </div>

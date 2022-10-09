@@ -1,11 +1,12 @@
 .FeaturedCard {
   padding: 50px;
   height: 250px;
-  border-radius: 0px;
-  border: none;
+  border-radius: 0px !important;
+  border: 0px solid white !important;
 }
 
 .FeaturedCard:hover {
   cursor: pointer;
-  border-top: 2px solid tomato;
+  border-radius: 0px;
+  border-top: 2px solid darkred !important;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import './Tests.css';
-import TestsCard from './Card';
+import TestsCard from './TestCard';
 
 function Tests() {
   return (

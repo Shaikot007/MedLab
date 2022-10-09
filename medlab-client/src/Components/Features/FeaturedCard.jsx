@@ -16,7 +16,7 @@ const FeaturedCard = () => {
     <div>
       <Row>
         <Col sm="3" style={{ padding: '0px' }}>
-          <Card body className='FeaturedCard'>
+          <Card className='FeaturedCard'>
             <CardImg src={Lab_1} alt="logo" style={{ marginTop: '10px', height: '25px', width: '75px' }} />
             <CardText style={{ padding: '25px 0px 25px 0px', textAlign: 'justify' }}>
               With supporting text below as a natural lead-in to additional content.
@@ -24,7 +24,7 @@ const FeaturedCard = () => {
           </Card>
         </Col>
         <Col sm="3" style={{ padding: '0px' }}>
-          <Card body className='FeaturedCard'>
+          <Card className='FeaturedCard'>
             <CardImg src={Lab_2} alt="logo" style={{ marginTop: '10px', height: '25px', width: '75px' }} />
             <CardText style={{ padding: '25px 0px 25px 0px', textAlign: 'justify' }}>
               With supporting text below as a natural lead-in to additional content.
@@ -32,7 +32,7 @@ const FeaturedCard = () => {
           </Card>
         </Col>
         <Col sm="3" style={{ padding: '0px' }}>
-          <Card body className='FeaturedCard'>
+          <Card className='FeaturedCard'>
             <CardImg src={Lab_3} alt="logo" style={{ marginTop: '10px', height: '25px', width: '75px' }} />
             <CardText style={{ padding: '25px 0px 25px 0px', textAlign: 'justify' }}>
               With supporting text below as a natural lead-in to additional content.
@@ -40,7 +40,7 @@ const FeaturedCard = () => {
           </Card>
         </Col>
         <Col sm="3" style={{ padding: '0px' }}>
-          <Card body className='FeaturedCard'>
+          <Card className='FeaturedCard'>
             <CardImg src={Lab_4} alt="logo" style={{ marginTop: '10px', height: '25px', width: '75px' }} />
             <CardText style={{ padding: '25px 0px 25px 0px', textAlign: 'justify' }}>
               With supporting text below as a natural lead-in to additional content.

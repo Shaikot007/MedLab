@@ -1,6 +1,6 @@
 import React from "react";
 import './Features.css';
-import FeaturedCard from './Card';
+import FeaturedCard from './FeaturedCard';
 
 function Features() {
   return (
