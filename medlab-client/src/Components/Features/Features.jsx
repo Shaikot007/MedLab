@@ -7,7 +7,7 @@ function Features() {
     <div className="Features">
       <div className="TopBox">
         <h4>Featured Labs</h4>
-        <h6 style={{ color: 'darkred' }}>VIEW ALL</h6>
+        <h6 style={{ color: 'darkred', cursor: 'pointer' }}>VIEW ALL</h6>
       </div>
       <div className="BottomBox">
         <FeaturedCard />

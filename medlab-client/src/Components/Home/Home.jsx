@@ -5,6 +5,7 @@ import Tests from '../Tests/Tests';
 import Health from '../Health/Health';
 import Features from '../Features/Features';
 import Facility from '../Facilities/Facilities';
+import Footer from '../Footer/Footer';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Health />
       <Features />
       <Facility />
+      <Footer />
     </div>
   );
 }

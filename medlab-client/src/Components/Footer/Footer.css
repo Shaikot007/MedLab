@@ -1,0 +1,100 @@
+.Footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 650px;
+  width: 100%;
+  background-color: #22306d;
+  color: white;
+}
+
+.AppointmentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 400px;
+  width: 25%;
+}
+
+.AppointmentSection img {
+  padding: 5% 0% 5% 0%;
+}
+
+.AppointmentSection p {
+  padding: 5% 0% 5% 0%;
+  text-align: justify;
+}
+
+.AppointmentSection .Arrow {
+  padding: 0px 10px 0px 10px;
+}
+
+.AppointmentSection .Arrow:hover {
+  cursor: pointer;
+}
+
+.DepartmentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  width: 15%;
+}
+
+.DepartmentSection h4 {
+  color: #b2dded;
+}
+
+.DepartmentSection h6:hover {
+  cursor: pointer;
+}
+
+.LinksSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  width: 15%;
+}
+
+.LinksSection h4 {
+  color: #b2dded;
+}
+
+.LinksSection h6:hover {
+  cursor: pointer;
+}
+
+.ContactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 400px;
+  width: 25%;
+  background-color: white;
+  border-radius: 5%;
+  text-align: left;
+  padding: 2%;
+}
+
+.ContactSection .Phone {
+  padding: 0px 10px 0px 10px;
+}
+
+.ContactSection .Phone:hover {
+  cursor: pointer;
+}
+
+.ContactSection .Arrow {
+  padding: 0px 10px 0px 10px;
+}
+
+.ContactSection .Arrow:hover {
+  cursor: pointer;
+}
