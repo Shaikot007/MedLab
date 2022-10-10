@@ -1,0 +1,122 @@
+.TestList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 5% 0% 5% 0%;
+}
+
+.TestListBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 50%;
+  padding: 0% 5% 0% 5%;
+}
+
+.TestNameList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 5% 0% 5% 0%;
+}
+
+.TestListBoxTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+}
+
+.TestCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  margin: 2% 0% 2% 0%;
+  padding: 5%;
+}
+
+.TestCardDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 70%;
+}
+
+.TestName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+}
+
+.TestName h6 {
+  padding-left: 2%;
+}
+
+.BlankBox {
+  width: 38px;
+}
+
+.TestCardButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80px;
+  width: 30%;
+}
+
+.TestCardButton Button {
+  width: 80%;
+  background-color: #10847e;
+  font-weight: bold;
+}
+
+.CartBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1%;
+  height: 200px;
+  width: 30%;
+  color: grey;
+}
+
+.CartBox h6 {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 2%;
+  border-bottom: 1px solid grey;
+}
+
+.CartBox p {
+  width: 100%;
+  text-align: left;
+  padding: 2% 0% 2% 0%;
+  font-weight: 500;
+}
+
+.CartBox Button {
+  width: 100%;
+  padding: 2% 0% 2% 0%;
+  font-weight: 500;
+  background-color: grey;
+}
