@@ -49,7 +49,7 @@ export default class NavBar extends React.Component {
                 <DropdownToggle nav caret style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>
                   Home
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu>
                   <DropdownItem>
                     Option 1
                   </DropdownItem>
@@ -66,7 +66,7 @@ export default class NavBar extends React.Component {
                 <DropdownToggle nav caret style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>
                   All Test
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu>
                   <DropdownItem>
                     Option 1
                   </DropdownItem>
@@ -95,7 +95,7 @@ export default class NavBar extends React.Component {
                 <DropdownToggle nav caret style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>
                   <FontAwesomeIcon icon={faSearch} size="lg" style={{ color: 'navy' }} />
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu>
                   <DropdownItem>
                     <Input placeholder='Find your tests' className='NavBarSearch' />
                   </DropdownItem>
