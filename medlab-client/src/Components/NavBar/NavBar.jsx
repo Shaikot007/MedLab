@@ -1,4 +1,5 @@
 import React from 'react';
+import './NavBar.css';
 import Brand_logo from '../../Images/Brand_logo/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +15,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  // Input,
+  Input,
   Button
 } from 'reactstrap';
 
@@ -22,6 +23,7 @@ export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
+
     this.state = {
       isOpen: false
     };
@@ -89,12 +91,16 @@ export default class NavBar extends React.Component {
               <NavItem>
                 <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Help</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink href="#">
-                <FontAwesomeIcon icon={faSearch} size="lg" style={{ paddingTop: '10px', color: 'navy' }} />
-                  {/* <Input placeholder='Find your tests' /> */}
-                </NavLink>
-              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>
+                  <FontAwesomeIcon icon={faSearch} size="lg" style={{ color: 'navy' }} />
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <Input placeholder='Find your tests' className='NavBarSearch' />
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
               <NavItem>
                 <NavLink href="#">
                   <Button style={{ backgroundColor: 'navy', borderRadius: '25px', width: '200px', fontWeight: 'bold' }}>

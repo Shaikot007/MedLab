@@ -52,7 +52,7 @@ const Banner = () => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={"Banner"} style={{ height: '550px', width: '100%' }} />
+        <img src={item.src} alt={"Banner"} style={{ height: 'auto', width: '100%' }} />
         <div className='TextCont'>
           <CarouselCaption captionHeader={item.caption} captionText={item.altText} />
         </div>
