@@ -1,0 +1,121 @@
+.LabList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 5% 0% 5% 0%;
+}
+
+.LabListBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 50%;
+  padding: 0% 5% 0% 5%;
+}
+
+.LabNameList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 5% 0% 5% 0%;
+}
+
+.LabListBoxTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+}
+
+.LabCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  margin: 2% 0% 2% 0%;
+  padding: 5%;
+}
+
+.LabCardDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 70%;
+}
+
+.LabName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+}
+
+.LabName h5 {
+  padding-left: 2%;
+}
+
+.BlankBox {
+  width: 38px;
+}
+
+.LabCardButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80px;
+  width: 30%;
+}
+
+.LabCardButton .LeftArrow {
+  color: #10847e;
+  cursor: pointer;
+}
+
+.CartBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1%;
+  height: 200px;
+  width: 30%;
+  color: grey;
+}
+
+.CartBox h6 {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 2%;
+  border-bottom: 1px solid grey;
+}
+
+.CartBox p {
+  width: 100%;
+  text-align: left;
+  padding: 2% 0% 2% 0%;
+  font-weight: 500;
+}
+
+.CartBox Button {
+  width: 100%;
+  padding: 2% 0% 2% 0%;
+  font-weight: 500;
+  background-color: grey;
+}
