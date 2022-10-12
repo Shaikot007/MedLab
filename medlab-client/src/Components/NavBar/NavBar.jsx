@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavBar.css';
+import { Link } from "react-router-dom";
 import Brand_logo from '../../Images/Brand_logo/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -45,54 +46,34 @@ export default class NavBar extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="justify-content-end" style={{ width: "100%" }} navbar>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>
-                  Home
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>
-                  All Test
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+
               <NavItem>
-                <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Departments</NavLink>
+                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', fontWeight: 'bold' }}>
+                  <Link to="/" style={{ textDecoration: 'none', color: 'navy' }}>Home</Link>
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Hospitals</NavLink>
+                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', fontWeight: 'bold' }}>
+                  <Link to="/testlist" style={{ textDecoration: 'none', color: 'navy' }}>Tests</Link>
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Membership</NavLink>
+                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', fontWeight: 'bold' }}>
+                  <Link to="/lablist" style={{ textDecoration: 'none', color: 'navy' }}>Laboratory</Link>
+                </NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>Hospitals</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#" style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>Help</NavLink>
+                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>Membership</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>Help</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret style={{ paddingTop: '15px', color: 'navy', fontWeight: 'bold' }}>
+                <DropdownToggle nav caret style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>
                   <FontAwesomeIcon icon={faSearch} size="lg" style={{ color: 'navy' }} />
                 </DropdownToggle>
                 <DropdownMenu>
@@ -102,14 +83,14 @@ export default class NavBar extends React.Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="#">
+                <NavLink href="#" style={{ padding: '10px 15px 0px 15px' }}>
                   <Button style={{ backgroundColor: 'navy', borderRadius: '25px', width: '200px', fontWeight: 'bold' }}>
                     Book an appointment
                   </Button>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">
+                <NavLink href="#" style={{ padding: '10px 15px 0px 15px' }}>
                   <Button style={{ backgroundColor: 'darkorange', borderRadius: '25px', width: '100px', fontWeight: 'bold' }}>
                     Sign in
                   </Button>
