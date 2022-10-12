@@ -25,7 +25,7 @@ function TestList() {
                   <h6>Complete Blood Count / Hemogram</h6>
                 </div>
                 <div className="TestName">
-                  <div className="BlankBox">
+                  <div className="TestBlankBox">
                   </div>
                   <h6>$ 275.00 <span style={{ color: 'grey' }}>onward</span> </h6>
                 </div>
@@ -41,7 +41,7 @@ function TestList() {
                   <h6>Complete Blood Count / Hemogram</h6>
                 </div>
                 <div className="TestName">
-                  <div className="BlankBox">
+                  <div className="TestBlankBox">
                   </div>
                   <h6>$ 275.00 <span style={{ color: 'grey' }}>onward</span> </h6>
                 </div>
@@ -57,7 +57,7 @@ function TestList() {
                   <h6>Complete Blood Count / Hemogram</h6>
                 </div>
                 <div className="TestName">
-                  <div className="BlankBox">
+                  <div className="TestBlankBox">
                   </div>
                   <h6>$ 275.00 <span style={{ color: 'grey' }}>onward</span> </h6>
                 </div>
@@ -73,7 +73,7 @@ function TestList() {
                   <h6>Complete Blood Count / Hemogram</h6>
                 </div>
                 <div className="TestName">
-                  <div className="BlankBox">
+                  <div className="TestBlankBox">
                   </div>
                   <h6>$ 275.00 <span style={{ color: 'grey' }}>onward</span> </h6>
                 </div>
@@ -89,7 +89,7 @@ function TestList() {
                   <h6>Complete Blood Count / Hemogram</h6>
                 </div>
                 <div className="TestName">
-                  <div className="BlankBox">
+                  <div className="TestBlankBox">
                   </div>
                   <h6>$ 275.00 <span style={{ color: 'grey' }}>onward</span> </h6>
                 </div>
@@ -100,7 +100,7 @@ function TestList() {
             </div>
           </div>
         </div>
-        <div className="CartBox">
+        <div className="TestCartBox">
           <h6>Order Summary</h6>
           <p>Please select a test to proceed</p>
           <Button>View Cart</Button>

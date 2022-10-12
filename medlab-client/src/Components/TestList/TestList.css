@@ -70,8 +70,8 @@
   padding-left: 2%;
 }
 
-.BlankBox {
-  width: 38px;
+.TestBlankBox {
+  width: 40px;
 }
 
 .TestCardButton {
@@ -89,7 +89,7 @@
   font-weight: bold;
 }
 
-.CartBox {
+.TestCartBox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -100,21 +100,21 @@
   color: grey;
 }
 
-.CartBox h6 {
+.TestCartBox h6 {
   width: 100%;
   text-align: left;
   padding-bottom: 2%;
   border-bottom: 1px solid grey;
 }
 
-.CartBox p {
+.TestCartBox p {
   width: 100%;
   text-align: left;
   padding: 2% 0% 2% 0%;
   font-weight: 500;
 }
 
-.CartBox Button {
+.TestCartBox Button {
   width: 100%;
   padding: 2% 0% 2% 0%;
   font-weight: 500;
