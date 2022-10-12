@@ -1,5 +1,6 @@
 import React from "react";
 import './Footer.css';
+import { Link } from "react-router-dom";
 import FooterLogo from '../../Images/Footer/footer_logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -34,7 +35,9 @@ function Footer() {
         <h6>Our Clinic</h6>
         <h6>Our Doctors</h6>
         <h6>News & Media</h6>
-        <h6>Appointments</h6>
+        <h6>
+          <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>Contact Us</Link>
+        </h6>
       </div>
       <div className="ContactSection">
         <h4 style={{ color: 'black' }}>Quick Contact</h4>

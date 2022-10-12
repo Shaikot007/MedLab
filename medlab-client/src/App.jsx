@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Components/Home/Home';
 import TestList from './Components/TestList/TestList';
 import LabList from './Components/LabList/LabList';
+import Contact from './Components/Contact/Contact';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,6 +15,9 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+          <Route path="/contact">
+            <Contact />
+          </Route>
           <Route path="/lablist">
             <LabList />
           </Route>
