@@ -37,6 +37,15 @@
   width: 100%;
 }
 
+.LabNameHeadline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+}
+
 .LabCard {
   display: flex;
   flex-direction: row;
@@ -48,44 +57,35 @@
   padding: 5%;
 }
 
+.BlankBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 20%;
+}
+
 .LabCardDetail {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: auto;
-  width: 70%;
+  width: 80%;
 }
 
 .LabName {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: auto;
   width: 100%;
 }
 
 .LabName h5 {
   padding-left: 2%;
-}
-
-.BlankBox {
-  width: 38px;
-}
-
-.LabCardButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 80px;
-  width: 30%;
-}
-
-.LabCardButton .LeftArrow {
-  color: #10847e;
-  cursor: pointer;
 }
 
 .CartBox {
