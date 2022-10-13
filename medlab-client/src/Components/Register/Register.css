@@ -1,0 +1,9 @@
+.Register {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 10%;
+}

@@ -63,12 +63,19 @@ export default class NavBar extends React.Component {
                 </NavLink>
               </NavItem>
 
+
               <NavItem>
                 <NavLink href="#" style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>Hospitals</NavLink>
               </NavItem>
+
+
               <NavItem>
-                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>Membership</NavLink>
+                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', fontWeight: 'bold' }}>
+                  <Link to="/register" style={{ textDecoration: 'none', color: 'navy' }}>Register</Link>
+                </NavLink>
               </NavItem>
+
+
               <NavItem>
                 <NavLink href="#" style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>Help</NavLink>
               </NavItem>
@@ -89,11 +96,15 @@ export default class NavBar extends React.Component {
                   </Button>
                 </NavLink>
               </NavItem>
+
+
               <NavItem>
                 <NavLink href="#" style={{ padding: '10px 15px 0px 15px' }}>
-                  <Button style={{ backgroundColor: 'darkorange', borderRadius: '25px', width: '100px', fontWeight: 'bold' }}>
-                    Sign in
-                  </Button>
+                  <Link to="/login" style={{ textDecoration: 'none', color: 'white' }}>
+                    <Button style={{ backgroundColor: 'darkorange', borderRadius: '25px', width: '100px', fontWeight: 'bold' }}>
+                      Sign in
+                    </Button>
+                  </Link>
                 </NavLink>
               </NavItem>
             </Nav>
