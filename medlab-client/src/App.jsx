@@ -7,6 +7,7 @@ import Contact from './Components/Contact/Contact';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Cart from './Components/Cart/Cart';
+import Checkout from './Components/Checkout/Checkout';
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/checkout">
+            <Checkout />
           </Route>
           <Route path="/cart">
             <Cart />

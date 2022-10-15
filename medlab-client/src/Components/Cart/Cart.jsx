@@ -3,9 +3,8 @@ import './Cart.css';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import CartItem from './CartItem';
-import {
-  Button
-} from 'reactstrap';
+import { Link } from "react-router-dom";
+import { Button } from 'reactstrap';
 
 function Cart() {
   return (
@@ -16,7 +15,9 @@ function Cart() {
         <CartItem />
         <div className='Checkout'>
           <h6>Total : $ 75.00</h6>
-          <Button color='success'>Checkout</Button>
+          <Link to="/checkout" style={{ textDecoration: 'none' }}>
+            <Button color='success'>Checkout</Button>
+          </Link>
         </div>
       </div>
       <Footer />
