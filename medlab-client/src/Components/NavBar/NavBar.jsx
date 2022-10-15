@@ -62,13 +62,6 @@ export default class NavBar extends React.Component {
                   <Link to="/lablist" style={{ textDecoration: 'none', color: 'navy' }}>Laboratory</Link>
                 </NavLink>
               </NavItem>
-
-
-              <NavItem>
-                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>Hospitals</NavLink>
-              </NavItem>
-
-
               <NavItem>
                 <NavLink href="#" style={{ padding: '15px 15px 0px 15px', fontWeight: 'bold' }}>
                   <Link to="/register" style={{ textDecoration: 'none', color: 'navy' }}>Register</Link>
@@ -79,6 +72,15 @@ export default class NavBar extends React.Component {
               <NavItem>
                 <NavLink href="#" style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>Help</NavLink>
               </NavItem>
+
+
+              <NavItem>
+                <NavLink href="#" style={{ padding: '15px 15px 0px 15px', fontWeight: 'bold' }}>
+                  <Link to="/cart" style={{ textDecoration: 'none', color: 'navy' }}>Cart</Link>
+                </NavLink>
+              </NavItem>
+
+
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret style={{ padding: '15px 15px 0px 15px', color: 'navy', fontWeight: 'bold' }}>
                   <FontAwesomeIcon icon={faSearch} size="lg" style={{ color: 'navy' }} />
@@ -107,6 +109,7 @@ export default class NavBar extends React.Component {
                   </Link>
                 </NavLink>
               </NavItem>
+
             </Nav>
           </Collapse>
         </Navbar>

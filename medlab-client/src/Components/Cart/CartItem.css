@@ -1,0 +1,20 @@
+.CartList {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.QuantityButton {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: auto;
+  width: 10px !important;
+  margin: 0% 15% 0% 15% !important;
+}
+
+.QuantityButton:hover {
+  cursor: pointer;
+}

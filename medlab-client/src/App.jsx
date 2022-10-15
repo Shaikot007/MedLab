@@ -6,6 +6,7 @@ import LabList from './Components/LabList/LabList';
 import Contact from './Components/Contact/Contact';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
+import Cart from './Components/Cart/Cart';
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/cart">
+            <Cart />
           </Route>
           <Route path="/lablist">
             <LabList />
