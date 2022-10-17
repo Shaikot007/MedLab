@@ -41,6 +41,12 @@ export default class RegisterForm extends React.Component {
             <Input type="number" name="phone" id="phone" placeholder="Enter your phone number" style={{ width: '500px' }} />
           </Col>
         </FormGroup>
+        <FormGroup row>
+          <Label for="address" sm={2}>Address</Label>
+          <Col sm={10}>
+            <Input type="textarea" name="address" id="address" placeholder="Enter your address" style={{ width: '500px' }} />
+          </Col>
+        </FormGroup>
         <FormGroup check row>
           <Col sm={{ size: 10, offset: 2 }}>
             <Button style={{ width: '250px', backgroundColor: '#10847e' }}>Register</Button>
