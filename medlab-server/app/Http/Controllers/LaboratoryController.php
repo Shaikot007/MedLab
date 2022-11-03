@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class LaboratoryController extends Controller
 {
+    private $laboratories;
+    private $laboratory;
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +17,7 @@ class LaboratoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.laboratory.add');
     }
 
     /**
@@ -24,7 +27,8 @@ class LaboratoryController extends Controller
      */
     public function create()
     {
-        //
+        $this->laboratories = Laboratory::orderBy('id', 'desc')->get();
+        return view('admin.laboratory.manage', ['laboratories' => $this->laboratories]);
     }
 
     /**
@@ -35,7 +39,8 @@ class LaboratoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Laboratory::newLaboratory($request);
+        return redirect()->back()->with('message', 'Laboratory info store successfully');
     }
 
     /**
@@ -44,7 +49,7 @@ class LaboratoryController extends Controller
      * @param  \App\Models\Laboratory  $laboratory
      * @return \Illuminate\Http\Response
      */
-    public function show(Laboratory $laboratory)
+    public function show($id)
     {
         //
     }
@@ -55,9 +60,10 @@ class LaboratoryController extends Controller
      * @param  \App\Models\Laboratory  $laboratory
      * @return \Illuminate\Http\Response
      */
-    public function edit(Laboratory $laboratory)
+    public function edit($id)
     {
-        //
+        $this->laboratory = Laboratory::find($id);
+        return view('admin.laboratory.edit', ['laboratory' => $this->laboratory]);
     }
 
     /**
@@ -67,9 +73,10 @@ class LaboratoryController extends Controller
      * @param  \App\Models\Laboratory  $laboratory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Laboratory $laboratory)
+    public function update(Request $request, $id)
     {
-        //
+        Laboratory::updateLaboratory($request, $id);
+        return redirect('/laboratories/create')->with('message', 'Laboratory info update successfully');
     }
 
     /**
@@ -78,8 +85,9 @@ class LaboratoryController extends Controller
      * @param  \App\Models\Laboratory  $laboratory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Laboratory $laboratory)
+    public function destroy($id)
     {
-        //
+        Laboratory::deleteLaboratory($id);
+        return redirect('/laboratories/create')->with('message', 'Laboratory info delete successfully');
     }
 }

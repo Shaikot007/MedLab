@@ -10,10 +10,10 @@
                     <span class="nav-label">Laboratory</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="#">Add Laboratory</a>
+                        <a href="{{route('laboratories.index')}}">Add Laboratory</a>
                     </li>
                     <li>
-                        <a href="#">Manage Laboratory</a>
+                        <a href="{{route('laboratories.create')}}">Manage Laboratory</a>
                     </li>
                 </ul>
             </li>
