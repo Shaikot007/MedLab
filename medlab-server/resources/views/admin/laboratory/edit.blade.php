@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="ibox-body">
-                    <form class="form-horizontal" action="{{route('laboratory.update', ['id' => $laboratory->id])}}" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="{{route('laboratories.update', ['laboratory' => $laboratory->id])}}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('put')
                         <div class="form-group row">

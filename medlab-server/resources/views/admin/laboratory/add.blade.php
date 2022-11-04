@@ -33,15 +33,15 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">Laboratory image</label>
-                            <div class="col-sm-10">
-                                <input class="form-control-file" type="file" name="thumbnail" accept="image/*" required/>
-                            </div>
-                        </div>
-                        <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Laboratory description</label>
                             <div class="col-sm-10">
                                 <textarea class="form-control" name="description" placeholder="Enter laboratory description" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Laboratory image</label>
+                            <div class="col-sm-10">
+                                <input class="form-control-file" type="file" name="image" accept="image/*" required/>
                             </div>
                         </div>
                         <div class="form-group row">

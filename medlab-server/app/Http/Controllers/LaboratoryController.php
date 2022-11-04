@@ -46,7 +46,7 @@ class LaboratoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Laboratory  $laboratory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -57,7 +57,7 @@ class LaboratoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Laboratory  $laboratory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -70,7 +70,7 @@ class LaboratoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Laboratory  $laboratory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -82,7 +82,7 @@ class LaboratoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Laboratory  $laboratory
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

@@ -20,41 +20,41 @@
                             </button>
                         </div>
                     @endif
-                    <table class="table table-striped table-bordered table-hover text-justify" id="example-table" cellspacing="0" width="100%">
+                    <table class="table table-striped table-bordered table-hover text-center" id="example-table" cellspacing="0" width="100%">
                         <thead>
-                        <tr>
-                            <th class="text-center">#</th>
-                            <th class="text-center">User name</th>
-                            <th class="text-center">Laboratory title</th>
-                            <th class="text-center">Laboratory description</th>
-                            <th class="text-center">Laboratory image</th>
-                            <th class="text-center">Action</th>
-                        </tr>
+                            <tr>
+                                <th class="text-center">#</th>
+                                <th class="text-center">Laboratory name</th>
+                                <th class="text-center">Laboratory description</th>
+                                <th class="text-center">Laboratory image</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Action</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        @foreach($laboratories as $laboratory)
-                            <tr>
-                                <td>{{$loop->iteration}}</td>
-                                <td>{{$laboratory->name}}</td>
-                                <td>{{$laboratory->title}}</td>
-                                <td>{{$laboratory->description}}</td>
-                                <td>
-                                    <img src="{{asset($laboratory->thumbnail)}}" alt="Image" height="70" width="100"/>
-                                </td>
-                                <td>
-                                    <a href="{{url('laboratories/'.$laboratory->id.'/edit')}}" class="btn btn-success btn-xs" title="Edit">
-                                        <i class="fa fa-edit"></i>
-                                    </a>
-                                    <a href="" class="btn btn-danger btn-xs" onclick="event.preventDefault(); document.getElementById('laboratoryDeleteForm{{$laboratory->id}}').submit();" title="Delete">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
-                                    <form action="{{url('/laboratories/'.$laboratory->id.'')}}" method="post" id="laboratoryDeleteForm{{$laboratory->id}}">
-                                        @csrf
-                                        @method('delete')
-                                    </form>
-                                </td>
-                            </tr>
-                        @endforeach
+                            @foreach($laboratories as $laboratory)
+                                <tr>
+                                    <td>{{$loop->iteration}}</td>
+                                    <td>{{$laboratory->name}}</td>
+                                    <td>{{$laboratory->description}}</td>
+                                    <td>
+                                        <img src="{{asset($laboratory->image)}}" alt="Image" height="70" width="100"/>
+                                    </td>
+                                    <td>{{$laboratory->status == 1 ? 'Published' : 'Unpublished'}}</td>
+                                    <td>
+                                        <a href="{{url('/laboratories/'.$laboratory->id.'/edit')}}" class="btn btn-success btn-xs" title="Edit">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a href="" class="btn btn-danger btn-xs" onclick="event.preventDefault(); document.getElementById('laboratoryDeleteForm{{$laboratory->id}}').submit();" title="Delete">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                        <form action="{{url('/laboratories/'.$laboratory->id.'')}}" method="post" id="laboratoryDeleteForm{{$laboratory->id}}">
+                                            @csrf
+                                            @method('delete')
+                                        </form>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

@@ -21,6 +21,8 @@ use App\Http\Controllers\LaboratoryController;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
+
+
 Route::resource('laboratories', LaboratoryController::class);
 
 //Route::group(['middleware' => ['auth:sanctum']], function () {
