@@ -18,6 +18,18 @@
                 </ul>
             </li>
             <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-balance-scale"></i>
+                    <span class="nav-label">Unit</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse">
+                    <li>
+                        <a href="{{route('units.index')}}">Add Unit</a>
+                    </li>
+                    <li>
+                        <a href="{{route('units.create')}}">Manage Unit</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
                 <a href="javascript:;"><i class="sidebar-item-icon fa fa-sticky-note-o"></i>
                     <span class="nav-label">Test</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
