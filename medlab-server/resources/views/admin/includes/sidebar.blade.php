@@ -34,10 +34,10 @@
                     <span class="nav-label">Test</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="#">Add Test</a>
+                        <a href="{{route('tests.index')}}">Add Test</a>
                     </li>
                     <li>
-                        <a href="#">Manage Test</a>
+                        <a href="{{route('tests.create')}}">Manage Test</a>
                     </li>
                 </ul>
             </li>

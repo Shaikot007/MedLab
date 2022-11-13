@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LaboratoryController;
 use App\Http\Controllers\UnitController;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::resource('laboratories', LaboratoryController::class);
 Route::resource('units', UnitController::class);
+Route::resource('tests', TestController::class);
 
 //Route::group(['middleware' => ['auth:sanctum']], function () {
 //    Route::resource('laboratories', LaboratoryController::class);
